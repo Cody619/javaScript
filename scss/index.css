@@ -1,7 +1,26 @@
 * {
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
   padding: 0;
   margin: 0;
+}
+
+.app_home {
+  height: 100vh;
+  background-image: url("../back.jpg");
+  background-size: cover;
+  width: 100%;
+}
+
+.container {
+  max-width: 1750px;
+  margin: 0 auto;
+}
+
+.main-navigation {
+  display: flex;
+  gap: 20px;
+  padding-top: 50px;
 }
 
 .pannel__wrapper {
@@ -19,4 +38,21 @@
 
 .test {
   color: green;
+}
+
+.btn_primary {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: rgb(3, 22, 51);
+  color: rgb(255, 193, 7);
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  font-size: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
 }/*# sourceMappingURL=index.css.map */

@@ -6,20 +6,33 @@
     <title>Document</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <!-- * Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./reset.css" />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="./scss/index.css" />
   </head>
   <body>
     <!-- * App -->
-    <div class="app">
-      <ul>
-        <li>
-          <a href="./homeworks/base/index.html">Base</a>
-        </li>
-        <li>
-          <a href="">Type</a>
-        </li>
-      </ul>
+    <div class="app app_home">
+      <div class="container">
+        <ul class="main-navigation">
+          <li class="main-navigation_item">
+            <a class="btn_primary" href="./homeworks/base/index.html">Base</a>
+          </li>
+          <li class="main-navigation_item">
+            <a class="btn_primary" href="">Type</a>
+          </li>
+          <li class="main-navigation_item">
+            <a class="btn_primary" href="./homeworks/homework2/index.html"
+              >homwork_2</a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
     <script src="./index.js"></script>
   </body>

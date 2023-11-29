@@ -1,6 +1,23 @@
 * {
   box-sizing: border-box;
-  // border: 1px solid red;
+  font-family: "Roboto", sans-serif;
   padding: 0;
   margin: 0;
+}
+
+.app_home {
+  height: 100vh;
+  background-image: url("../back.jpg");
+  background-size: cover;
+  width: 100%;
+}
+
+.container {
+  max-width: 1750px;
+  margin: 0 auto;
+}
+.main-navigation {
+  display: flex;
+  gap: 20px;
+  padding-top: 50px;
 }
