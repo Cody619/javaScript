@@ -19,31 +19,46 @@ console.log(
 
 //матиматичне правельне рішення
 
-const a = 0.1;
-const b = 0.2;
-
-const sum = a + b;
-
-console.log(sum); // 0.3
+let result = (0.1 * 10 + 0.2 * 10) / 10;
+console.log(result);
 
 //перетворення данних
 
 const str = "1";
 const sumNum = 2;
 
-const aNum = Number(str);
-const change = aNum + sumNum;
-
-console.log(change); // 3
+console.log(Number(str) + sumNum); // 3
 
 //гаманець
 
 const money = Number(prompt("Скільки грошей у вас в гаманці? "));
 const price = Number(prompt("Скільки коштує одна шоколадка? "));
-
-const cout = money / price;
+//округляємо
+const cout = Math.floor(money / price);
+//знаходемо решту
 const chang = money % price;
 
 console.log(
   `Ви можете купити ${cout} шоколадок. У вас залишиться ${chang} гривень.`
 );
+
+//реверс числа
+
+let number = prompt("назвіть тризначне число");
+let revNumber = 0;
+while (number > 0) {
+  revNumber = revNumber * 10 + (number % 10);
+  number = Math.floor(number / 10);
+}
+console.log(revNumber);
+
+//процентна ставка вкладу
+
+let deposit = prompt("Введіть суму вкладу в банк:");
+// Річна процентна ставка
+let procent = 5;
+// Кількість місяців
+let Months = 2;
+// Розрахунок суми відсотків
+let rezult = (deposit * procent * Months) / (12 * 100);
+console.log(`Сума нарахованих відсотків: ${rezult.toFixed(2)} грн`);

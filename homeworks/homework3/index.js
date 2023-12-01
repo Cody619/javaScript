@@ -99,3 +99,16 @@ if (isNaN(number1) || isNaN(number2)) {
   const gcd = findGCD(number1, number2);
   console.log(`Найбільший спільний дільник ${number1} i ${number2} є: ${gcd}`);
 }
+
+//таблиця множення
+
+let someNum = prompt("введіть від 2 - 9");
+let result = 0;
+
+if (someNum >= 2 && someNum <= 9) {
+  for (let i = 1; i <= 10; i++) {
+    result = someNum * i;
+
+    console.log(result);
+  }
+}
